@@ -6,8 +6,7 @@ package com.manzo.recyclerview.listComponents;
 
 public class Item {
 
-
-    String title;
+    private String title;
 
     public Item(String title) {
         this.title = title;

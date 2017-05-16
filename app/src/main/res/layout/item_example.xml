@@ -12,7 +12,7 @@
 
     <LinearLayout
     android:orientation="horizontal"
-    android:padding="8dp"
+    android:padding="@dimen/content_distance_small"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:onClick="@{() -> clickListener.onMyItemClick(item)}" >
