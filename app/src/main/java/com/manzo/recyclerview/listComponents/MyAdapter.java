@@ -43,13 +43,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        Item item = new Item(String.valueOf(position)); // TODO: load item from dataset by position
+        // We create a sample item that only contains the position number
+        Item item = new Item(String.valueOf(position)); // TODO: load items from dataset
         holder.bind(item);
     }
 
     @Override
     public int getItemCount() {
-        return 10; // TODO: replace with dataset actual lenght
+        return 10; // TODO: replace with dataset actual length
     }
 }
 
