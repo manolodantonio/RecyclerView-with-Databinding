@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="item"
+            type="com.manzo.recyclerview.listComponents.Item"/>
+        <variable
+            name="clickListener"
+            type="com.manzo.recyclerview.listComponents.MyAdapter.MyItemClickListener" />
+    </data>
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="@{() -> clickListener.onMyItemClick(item)}" >
+
+        <TextView
+            android:id="@+id/tv_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{item.title}"/>
+
+    </LinearLayout>
+
+</layout>
